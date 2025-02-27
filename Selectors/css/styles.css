@@ -1,0 +1,143 @@
+/* ================================================ */
+/*  */
+/* ================================================ */
+/* COMBINING TOGETHER */
+/* p {
+  color: red;
+  font-size: 22px;
+} */
+/* COMBINING TOGETHER */
+/* 
+span {
+  color: green;
+} */
+
+/* 
+p,
+div {
+  font-size: 20px;
+}
+
+p {
+  color: red;
+  font-size: 20px;
+}
+
+div {
+  color: green;
+  font-size: 20px;
+}
+
+span {
+  color: blue;
+  font-size: 22px;
+} */
+
+/* ================================================ */
+/* ID */
+/* ================================================ */
+/* COMBINING TOGETHER */
+/* 
+#text-one,
+#div-one,
+#span-one {
+  color: red;
+}
+
+#text-two,
+#div-three {
+  color: green;
+} */
+
+/* COMBINING TOGETHER */
+
+/* 
+#text-one {
+  color: red;
+}
+
+#div-one {
+  color: red;
+}
+
+#span-one {
+  color: red;
+} */
+
+/* 
+#text-two {
+  color: green;
+}
+
+#div-three {
+  color: green;
+} */
+
+/* 
+#span-three {
+  color: blueviolet;
+} */
+
+/* ================================================ */
+/* CLASS */
+/* ================================================ */
+/* 
+.text {
+  color: red;
+}
+
+.short-text {
+  color: green;
+} */
+
+/* ================================================ */
+/* ATTRIBUTE */
+/* ================================================ */
+/* You can select the attribute with data-type and change the colors */
+/* 
+[data-type] {
+  color: blue;
+} */
+
+/* 
+[data-type="red-text"] {
+  color: red;
+}
+
+[data-type="green-text"] {
+  color: green;
+} */
+
+/* [class="text"] {
+  color: red;
+}
+
+[id="text-three"] {
+  color: green;
+} */
+
+/* 
+[class="text"] {
+  color: red;
+}
+
+[id="text-three"] {
+  color: green;
+} */
+
+/* 
+.text {
+  color: red;
+}
+
+#text-three {
+  color: green;
+} */
+
+/* ================================================ */
+/* UNIVERSAL SELECTOR */
+/* ================================================ */
+/* 
+* {
+  color: blueviolet;
+} */

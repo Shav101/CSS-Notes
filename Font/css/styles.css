@@ -1,0 +1,41 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"); */
+
+@font-face {
+  font-family: Orbitron;
+  src: url("../fonts/Orbitron-VariableFont_wght.ttf");
+}
+
+body {
+  font-size: 20px;
+  /* font-weight: 710; */
+}
+
+.text {
+  font: small-caps oblique lighter 80% Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-size: larger; */
+  /* font-size: 80%; */
+  /* font-weight: 600; */
+  /* font-weight: lighter; */
+  /* font-style: italic; */
+  /* font-variant: all-small-caps; */
+  /* font-stretch: narrower; */
+  /* font-stretch: condensed; */
+}
+
+.text1 {
+  font-family: "Orbitron", serif;
+}
+
+.icon {
+  font-size: 54px;
+  color: tomato;
+  background-color: aqua;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+/* .youtube {
+  font-size: 54px;
+  color: red;
+} */

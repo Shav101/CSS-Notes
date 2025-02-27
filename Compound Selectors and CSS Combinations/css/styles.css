@@ -1,0 +1,55 @@
+/* COMPOUND SELECTOR */
+/* 
+a.item {
+  color: tomato;
+}
+
+a.active.item {
+  color: green;
+}
+
+p#first.text.intro-text.item[data-type="full-text"] {
+  color: blue;
+} */
+
+/* DECENDANT COMBINATOR */
+/* 
+main p {
+  color: green;
+} */
+
+/* 
+main p#first {
+  color: green;
+} */
+
+/* 
+main section p {
+  color: green;
+}
+
+ul a {
+  color: tomato;
+}
+
+ul a.active {
+  color: green;
+} */
+
+/* CHILD combinator */
+/* 
+main > p {
+  color: green;
+} */
+
+/* NEXT-sibling combinator */
+/* 
+p + span {
+  color: tomato;
+} */
+
+/* SUBSEQUENT-sibling combinator */
+
+p ~ span {
+  color: tomato;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+    <!-- <H1>STYLE within Head section of the HTML</H1>
+    <p>=================================================</p>
+    <style>
+      p {
+        color: red;
+        font-size: 22px;
+      }
+
+      span{
+        color: green;
+      }
+    </style>
+    <p>=================================================</p> -->
+  </head>
+  <!-- <body style="color: red; font-size: 22px"> -->
+<body>
+    <!-- in order not to have repetitive styles you can put it within the body which allows its children to inherit the style-->
+    <!-- THE PROBLEM WITH IT IS THAT EVERY CHILD YOU ADD WILL INHERIT THE STYLE -->
+    <h1>INLINE STYLES</h1>
+    <p>Inline style through global "style" attribute</p>
+    <p>adding in opening tag of HTML element</p>
+    <p>
+      global keyword means the style attribute can be added into any html
+      element within any html body
+    </p>
+    <p>p style="color: red; font-size: 22px"</p>
+    <!-- <p style="color: red; font-size: 22px"</p> --> 
+    <p style="color: red; font-size: 22px" ></p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, ipsam?
+    </p>
+    <p>why its not good idea to write the styles within the opening tag</p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi eum ex
+      cupiditate veritatis natus consequatur debitis eveniet totam inventore
+      porro!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+      voluptate!
+    </p>
+    <!-- <span style="color: green;">Some span text</span>
+    <table style="color: blue;">
+      <tr>
+        <td>Text One</td>
+        <td>Text Two</td>
+      </tr>
+    </table> -->
+    <span>Some</span>
+    <p>=============================================================</p>
+    <h1>CSS Selector</h1>
+    <p>selector means tells the browser which HTML element should have CSS property</p>
+    <p>every css property include css property name and css property value.. EX: css-property-one: value;  </p>
+    <p>=============================================================</p>
+    <h1>Simple Selectors</h1>
+    <p>most basic selectors and target elements based on their "type, class, ID, or attributes"</p>
+    <p>Type-ID----class---------attribute.name-attribute.value</p>
+    <p> p id="first" class="text" data-type="formatted"</p>
+    <p>=============================================================</p>
+    <h1>Type selector</h1>
+    <p>selecting the elements by a name of the html element </p>
+    <p>shape{ color:red }</p>
+    <p>letter { color: red }</p>
+    <p>shape, letter { color: red }</p>
+    <p> p {color: red; font-size: 22px; }</p>
+    <p>span { color: green; }</p>
+    <p>=============================================================</p>
+    <h1>ID Selector</h1>
+    <p>selecting elements by ID </p>
+    <p>it starts with #</p>
+    <h2>Paragraphs</h2>
+    <p id="text-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, necessitatibus.</p>
+    <p id="text-two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, necessitatibus.</p>
+    <p id="text-three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, necessitatibus.</p>
+    <h2>Divs</h2>
+    <div id="div-one">Div text 1</div>
+    <div id="div-two">Div text 2</div>
+    <div id="div-three">Div text 3</div>
+    <h2>Spans</h2>
+    <span id="span-one">Span text one</span>
+    <span id="span-two">Span text two</span>
+    <span id="span-three">Span text three</span>
+    <p>=============================================================</p>
+    <h1>CLASS selector</h1>
+    <p>selecting the elements by the class name</p>
+    <p>it starts with .</p>
+    <h2>Paragraphs</h2>
+    <p id="text-one" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, necessitatibus.</p>
+    <p id="text-two" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, necessitatibus.</p>
+    <p id="text-three" class="short-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, necessitatibus.</p>
+    <h2>Divs</h2>
+    <div id="div-one">Div text 1</div>
+    <div id="div-two" class="text">Div text 2</div>
+    <div id="div-three">Div text 3</div>
+    <h2>Spans</h2>
+    <span id="span-one">Span text one</span>
+    <span id="span-two">Span text two</span>
+    <span id="span-three" class="short-text">Span text three</span>
+    <p>=============================================================</p>
+    <h1>Attribute selector</h1>
+    <p>selecting the elements that have attribute set or have a specific attribute value set for the HTML element</p>
+    <p>the selector is wrapped by square bracket []</p>
+    <h2>Paragraphs</h2>
+    <p id="text-one" class="text" data-type="red-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, necessitatibus.</p>
+    <p id="text-two" class="text" data-type="green-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, necessitatibus.</p>
+    <p id="text-three" class="short-text" data-type="red-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, necessitatibus.</p>
+    <h2>Divs</h2>
+    <div id="div-one" data-type="red-text">Div text 1</div>
+    <div id="div-two" class="text">Div text 2</div>
+    <div id="div-three">Div text 3</div>
+    <h2>Spans</h2>
+    <span id="span-one">Span text one</span>
+    <span id="span-two" data-type="green-text">Span text two</span>
+    <span id="span-three" class="short-text">Span text three</span>
+    <p>=============================================================</p>
+    <h1>Universal selector</h1>
+    <p>This selector will select EVERY HTML element in the HTML Document and add the styles to them</p>
+    <p>its just an ASTERISK (*) symbol</p>
+  </body>
+</html>

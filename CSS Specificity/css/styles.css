@@ -1,0 +1,76 @@
+/* ============================================== */
+/* ID Selectors */
+/* 100 */
+/* this will be the highest specificity since its 100 */
+/* 
+#first {
+  color: aqua;
+} */
+/* ============================================== */
+/* Class Selectors */
+/* 010 */
+/* 
+.text {
+  color: blue;
+} */
+/* ============================================== */
+/* Class Selectors */
+/* 010 */
+/* 
+.red {
+  color: red;
+} */
+/* ============================================== */
+/* Attribute Selectors */
+/* 010 */
+/* 
+[data-type="long-text"] {
+  color: pink;
+} */
+/* Since we have 3 specificity of 010 then the last declared will be the highest specificity */
+/* ============================================== */
+/* Type Selectors */
+/* 001 */
+/* 
+p {
+  color: black;
+} */
+/* ============================================== */
+/* Compound Selectors */
+/* 111 */
+/* 
+p#first.red {
+  color: red;
+} */
+
+/* 101 */
+/* 
+p#first {
+  color: green;
+} */
+
+/* 011 */
+/* 
+p.text {
+  color: blue;
+} */
+
+/* ============================================== */
+/* Complex Selectors */
+/* 110 */
+/* 
+.page-content #first {
+  color: green;
+} */
+
+/* 101 */
+/* 
+div #first {
+  color: blue;
+} */
+
+/* 020 */
+/* 
+.page-content .red {
+  color: red;
+} */

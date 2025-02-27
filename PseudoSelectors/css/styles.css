@@ -1,0 +1,164 @@
+/* PSEUDO ELEMENT */
+/* =================================================================== */
+/* We can make it globally this way */
+/* 
+::selection {
+  background-color: blueviolet;
+  color: white;
+} */
+/* 
+li::marker {
+  color: red;
+  content: "\2192  ";
+  ontent: "- ";
+  content: "😊";
+  content: "\2192 ";
+}*/
+
+/* 
+ul {
+  list-style-type: square;
+} */
+/* 
+textarea::placeholder {
+  color: green;
+  content: "123";
+}
+
+p::selection {
+  background-color: blueviolet;
+  color: white;
+} */
+/* 
+p::before {
+  content: "\201C ";
+  color: orange;
+}
+
+p::after {
+  content: "\201D";
+  color: green;
+} */
+/* 
+.quoted::before {
+  content: "\201C ";
+  color: orange;
+}
+.quoted::after {
+  content: "\201D";
+  color: green;
+} */
+
+/* =================================================================== */
+/* 
+li {
+  color: green;
+}
+
+li::marker {
+
+  content: "\2192  ";
+}
+
+textarea::placeholder {
+  color: green;
+}
+
+p::selection {
+  background-color: blueviolet;
+}
+
+.quoted {
+  color: blueviolet;
+}
+
+.quoted::before {
+  content: "\201C ";
+}
+.quoted::after {
+  content: "\201D";
+} */
+/* =================================================================== */
+/* PSEUDO CLASS */
+/* =================================================================== */
+
+/* =================================================================== */
+/* Global value not a common way*/
+/* =================================================================== */
+/* 
+:root {
+  color: green;
+} */
+
+:root {
+  --main-color: tomato;
+}
+
+a {
+  color: tomato;
+}
+
+a:visited {
+  color: blueviolet;
+}
+
+a:hover {
+  color: green;
+}
+
+/* 
+a:active {
+  color: blue;
+} */
+
+a:active {
+  color: var(--main-color);
+}
+
+li:first-of-type {
+  color: green;
+}
+/* 
+li:last-of-type {
+  color: blue;
+} */
+
+li:last-of-type {
+  color: var(--main-color);
+}
+
+/* li:nth-of-type(4) {
+  color: blue;
+} */
+
+/* 
+li:nth-of-type(odd) {
+  color: blue;
+} */
+/* 
+li:nth-of-type(even) {
+  color: yellow;
+} */
+
+/* 
+li:nth-of-type(2n + 1) {
+  color: blue;
+} */
+
+/* 
+li:nth-child(3 of li.special) {
+  this is saying select the third one from special list
+  color: blue;
+} */
+
+li:nth-child(3 of li.special) {
+  color: var(--main-color);
+}
+
+ul:has(.special) {
+  list-style-type: none;
+}
+
+ul:has(.special):has(.active)::before {
+  content: "This is the selected unordered list";
+}

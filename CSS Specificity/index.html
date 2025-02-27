@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CSS SPECIFICITY</h1>
+    <p id="first">
+      Specificity is the algorithm used by the browser to determine the CSS
+      declaration that is the most relevant to an element, which in return,
+      determines the property value to apply to the element.
+    </p>
+    <ul>
+      <li>Inline style = 1000</li>
+      <li>Type selector = 001</li>
+      <li>Pseudo-element selector = 001</li>
+      <li>Class selector = 010</li>
+      <li>Pseudo-class selector = 010</li>
+      <li>Attribute selector = 010</li>
+      <li>ID selector = 100</li>
+      <li>Universal selector = 000</li>
+      <li>Compound selector = x y z</li>
+      <li>CSS combined = x y z</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+#first {
+  color: tomato;
+}
+
+.content {
+  color: green;
+}
+
+p {
+  color: red !important;
+}
+
+.red {
+  color: yellow !important;
+}

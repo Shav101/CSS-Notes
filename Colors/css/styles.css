@@ -1,0 +1,59 @@
+/* Name Value */
+/* 
+.text {
+  color: red;
+} */
+
+/* HEX */
+/* 
+.text {
+  color: #008000;
+} */
+
+/* RGB */
+/* 
+.text {
+  color: rgb(0 0 255);
+} */
+
+/* HSL */
+/* 
+.text {
+  color: hsl(240 100% 50%);
+} */
+
+/* TRANSPARENT */
+/* 
+.text {
+  color: transparent;
+} */
+
+.text {
+  /* background-color: blue; */
+  background-image: linear-gradient(blue, red);
+  color: white;
+  /* border-width: 10px;
+  border-style: solid;
+  border-color: aqua; */
+  border: 10px solid aqua;
+  columns: 2;
+  column-rule-width: 3px;
+  column-rule-style: solid;
+  column-rule-color: yellow;
+  text-shadow: 0 0 3px yellow;
+}
+
+.text:active {
+  outline-width: 5px;
+  outline-style: dashed;
+  outline-color: brown;
+}
+
+.my-input {
+  caret-color: tomato;
+}
+
+.underlined {
+  text-decoration: underline;
+  text-decoration-color: tomato;
+}
