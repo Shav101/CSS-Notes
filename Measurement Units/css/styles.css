@@ -1,0 +1,106 @@
+html {
+  font-size: 24px;
+}
+
+body {
+  /* font-size: 24px; */
+}
+
+.text-container {
+  /* font-size: 24px; */
+}
+/* ======================================================================= */
+/* PX */
+/* .text {
+  width: 300px;
+  height: 200px;
+  border: 3px solid;
+  padding: 20px;
+  margin: 60px;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: 3px underline;
+} */
+/* ======================================================================= */
+/* EM with 18px font size USES THE SIZE OF THE ELEMENT*/
+/* .text {
+  width: 16.67em;
+  height: 11.11em;
+  border: 0.17em solid;
+  padding: 1.11em;
+  margin: 3.33em;
+  font-size: 18px;
+  line-height: 1.33em;
+  text-decoration: 0.17em underline;
+} */
+/* ======================================================================= */
+/* https://www.w3schools.com/tags/ref_pxtoemconversion.asp */
+
+/* 300 (px) DIVIDED BY 18 (18px) 
+  300 is the width
+  18 is the font-size
+*/
+
+/* to go back to px
+  16.67 (em) multiply by 18 (px)
+*/
+/* ======================================================================= */
+/* EM with 24px font size */
+/* .text {
+  width: 16.67em;
+  height: 11.11em;
+  border: 0.17em solid;
+  padding: 1.11em;
+  margin: 3.33em;
+  font-size: 24px;
+  line-height: 1.33em;
+  text-decoration: 0.17em underline;
+} */
+
+/* EM and Using EM font-size */
+/* .text {
+  width: 16.67em;
+  height: 11.11em;
+  border: 0.17em solid;
+  padding: 1.11em;
+  margin: 3.33em;
+  font-size: 1.5em; /* 36px because of the main font-size and font-size in the text
+  line-height: 1.33em;
+  text-decoration: 0.17em underline;
+} */
+
+/* REM uses the font-size from html (root)*/
+/* .text {
+  width: 16.67rem;
+  height: 11.11rem;
+  border: 0.17rem solid;
+  padding: 1.11rem;
+  margin: 3.33rem;
+  font-size: 1.5rem;
+  line-height: 1.33rem;
+  text-decoration: 0.17rem underline;
+} */
+
+/* VW  RELATIVE TO 1% OF THE WIDTH OF THE VIEWPORT = doesnt make sense for smaller sizes*/
+/* .text {
+  width: 50vw;
+  height: 50vh;
+  border: 0.17rem solid;
+  padding: 1.11rem;
+  margin: 3.33rem;
+  font-size: 1.5rem;
+  line-height: 1.33rem;
+  text-decoration: 0.17rem underline;
+} */
+
+/* % Relative to parent element */
+.text {
+  width: 50%;
+  height: 50vh;
+  border: 0.17rem solid;
+  padding: 1.11rem;
+  margin: 3.33rem;
+  font-size: 100%;
+  line-height: 1.33rem;
+  text-decoration: 0.17rem underline;
+}
