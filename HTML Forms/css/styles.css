@@ -1,0 +1,52 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.horizontal {
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal .form-control {
+  flex-direction: row;
+  gap: 8px;
+}
+
+.form-group p {
+  font-weight: bold;
+}
+
+legend {
+  font-weight: bold;
+  display: contents;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.horizontal .form-control label {
+  font-weight: normal;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form label {
+  font-weight: bold;
+}

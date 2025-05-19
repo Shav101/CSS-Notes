@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/scripts.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <!-- FIRST NAME -->
+    <form id="myForm" action="#" class="form">
+      <div class="info">
+        <h1>Some Forms</h1>
+        <p>Some forms description goes here....</p>
+      </div>
+      <div class="form-control">
+        <label for="firstName">First Name</label>
+        <input
+          id="firstName"
+          name="first-name"
+          type="text"
+          placeholder="First Name"
+        />
+      </div>
+
+      <!-- LAST NAME -->
+      <div class="form-control">
+        <label for="lastName">Last Name</label>
+        <input
+          id="lastName"
+          name="last-name"
+          type="text"
+          placeholder="Last Name"
+        />
+      </div>
+      <!-- PASSWORD -->
+      <div class="form-control">
+        <label for="password">Password</label>
+        <input
+          id="password"
+          placeholder="At least 10 characters"
+          name="password"
+          type="password"
+          minlength="10"
+        />
+      </div>
+      <!-- EMAIL -->
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="name@companny.zone"
+        />
+      </div>
+      <!-- UPLOADING FILE -->
+      <div class="form-control">
+        <label for="avatar">Avatar</label>
+        <input id="avatar" type="file" name="avatar" />
+      </div>
+      <!-- RADIO BUTTON -->
+      <div class="form-group horizontal">
+        <p>Your age</p>
+        <div class="form-control">
+          <input id="under18" name="age" type="radio" value="under18" />
+          <label for="under18">Under 18</label>
+        </div>
+        <div class="form-control">
+          <input id="18to30" name="age" type="radio" value="18to30" />
+          <label for="18to30">18 - 30</label>
+        </div>
+        <div class="form-control">
+          <input id="over30" name="age" type="radio" value="over30" />
+          <label for="over30">Over 30</label>
+        </div>
+      </div>
+
+      <!-- RADIO BUTTON -->
+      <fieldset class="form-group horizontal">
+        <legend>Your age</legend>
+        <div class="form-control">
+          <input id="under18" name="age" type="radio" value="under18" />
+          <label for="under18">Under 18</label>
+        </div>
+        <div class="form-control">
+          <input id="18to30" name="age" type="radio" value="18to30" />
+          <label for="18to30">18 - 30</label>
+        </div>
+        <div class="form-control">
+          <input id="over30" name="age" type="radio" value="over30" />
+          <label for="over30">Over 30</label>
+        </div>
+      </fieldset>
+
+      <!-- RADIO BUTTON -->
+      <div class="form-group horizontal">
+        <p>Your Interest</p>
+        <div class="form-control">
+          <input id="coding" name="interest" type="checkbox" value="coding" />
+          <label for="coding">Coding</label>
+        </div>
+        <div class="form-control">
+          <input id="skiing" name="interest" type="checkbox" value="skiing" />
+          <label for="skiing">Skiing</label>
+        </div>
+        <div class="form-control">
+          <input id="netflix" name="interest" type="checkbox" value="netflix" />
+          <label for="netflix">Netflix</label>
+        </div>
+      </div>
+
+      <!-- LIST -->
+      <div class="form-control">
+        <label for="flavor">Flavor</label>
+        <input id="flavor" name="flavor" type="text" list="ice-cream-flavors" />
+      </div>
+      <!-- TEXT AREA -->
+      <div class="form-control">
+        <label for="story">Tell us your story:</label>
+
+        <textarea
+          id="story"
+          name="story"
+          rows="5"
+          cols="33"
+          placeholder="Tell us your story here"
+          required
+        ></textarea>
+      </div>
+      <!-- SELECT LIST -->
+      <div class="form-control">
+        <label for="pet-select">Choose a pet:</label>
+
+        <select name="pets" id="pet-select" size="5" multiple>
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+          <option value="parrot">Parrot</option>
+          <option value="spider">Spider</option>
+          <option value="goldfish">Goldfish</option>
+        </select>
+      </div>
+      <!-- SELECT LIST #2 -->
+      <div class="form-control">
+        <label for="hr-select">Your favorite food</label> <br />
+
+        <select name="foods" id="hr-select">
+          <option value="">Choose a food</option>
+          <hr />
+          <optgroup label="Fruit">
+            <option value="apple">Apples</option>
+            <option value="banana">Bananas</option>
+            <option value="cherry">Cherries</option>
+            <option value="damson">Damsons</option>
+          </optgroup>
+          <hr />
+          <optgroup label="Vegetables">
+            <option value="artichoke">Artichokes</option>
+            <option value="broccoli">Broccoli</option>
+            <option value="cabbage">Cabbages</option>
+          </optgroup>
+          <hr />
+          <optgroup label="Meat">
+            <option value="beef">Beef</option>
+            <option value="chicken">Chicken</option>
+            <option value="pork">Pork</option>
+          </optgroup>
+          <hr />
+          <optgroup label="Fish">
+            <option value="cod">Cod</option>
+            <option value="haddock">Haddock</option>
+            <option value="salmon">Salmon</option>
+            <option value="turbot">Turbot</option>
+          </optgroup>
+        </select>
+      </div>
+      <!-- SUBMIT BUTTONS -->
+      <input type="submit" value="Submit this data" />
+      <button type="submit">Submit with button</button>
+    </form>
+    <!-- DATA FOR FLAVOR -->
+    <datalist id="ice-cream-flavors">
+      <option value="Chocolate"></option>
+      <option value="Coconut"></option>
+      <option value="Mint"></option>
+      <option value="Strawberry"></option>
+      <option value="Vanilla"></option>
+    </datalist>
+  </body>
+</html>
