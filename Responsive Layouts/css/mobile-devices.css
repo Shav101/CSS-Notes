@@ -1,0 +1,63 @@
+/* this is to add color to all devices */
+body {
+  color: red;
+}
+
+.tablet,
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .desktop {
+    display: none;
+  }
+
+  /* add color to the tablet only */
+  body {
+    color: green;
+  }
+
+  .tablet {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .tablet {
+    display: none;
+  }
+
+  /* add color to the mobile only */
+  body {
+    color: red;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
+/* 
+@media (min-width: 768px) AND (max-width: 1023px) {
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+} */
+
+/* 
+@media (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+} */
