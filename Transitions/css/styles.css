@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  transition: all 2s ease-in-out;
+}
+
+.box-scale {
+  background-color: aqua;
+}
+
+.box-scale:hover {
+  transform: scale(1.4) translateX(100px);
+  /* transform: scale(1.4); */
+}
+
+.box-move {
+  background-color: beige;
+}
+
+.box-move:hover {
+  transform: translateX(40px);
+}
+
+.box-rotate {
+  background-color: cadetblue;
+}
+
+.box-rotate:hover {
+  transform: rotate(30deg);
+}
+
+.box-disappear {
+  background-color: rgb(233, 23, 198);
+}
+
+.box-disappear:hover {
+  opacity: 0;
+}
+
+.btn-hover {
+  background-color: rgb(44, 130, 200);
+  color: white;
+  border: 1px solid rgb(44, 130, 200);
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: background-color 4s ease-in-out 2s, color 4s ease-in-out 2s;
+  /* transition: all 4s ease-in-out 2s; */
+  /* transition-delay: 2s;
+  transition-duration: 2s;
+  transition-property: background-color, color;
+  transition-timing-function: ease-in-out; */
+}
+
+.btn-hover:hover {
+  background-color: white;
+  color: rgb(44, 130, 200);
+  /* transition-delay: 2s;
+  transition-duration: 2s;
+  transition-property: background-color, color;
+  transition-timing-function: ease-in-out; */
+}
