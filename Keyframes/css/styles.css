@@ -1,0 +1,80 @@
+/* .animated-box-scale { */
+/* width: 30px;
+  height: 30px;
+  background-color: red;
+  animation: box-scale 3s none infinite alternate 3s; */
+/* animation-name: box-scale;
+  animation-duration: 3s;
+  animation-fill-mode: none; */
+/* animation-fill-mode: backwards; */
+/* animation-fill-mode: forwards; */
+/* animation-iteration-count: infinite; */
+/* animation-iteration-count: 3; */
+/* animation-direction: alternate; */
+/* animation-direction: reverse; */
+/* animation-delay: 3s; */
+/* } */
+
+/* @keyframes box-scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+.animated-box-container {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+}
+
+.animated-box {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  position: relative;
+  top: 0;
+  left: 0;
+  animation: box-move 5s infinite linear, box-scale 3s infinite alternate;
+  /* animation: box-move 5s infinite linear; */
+}
+
+@keyframes box-scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes box-move {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: green;
+  }
+  25% {
+    top: 0;
+    left: 170px;
+  }
+  50% {
+    top: 170px;
+    left: 170px;
+  }
+  75% {
+    top: 170px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    background-color: purple;
+  }
+}
